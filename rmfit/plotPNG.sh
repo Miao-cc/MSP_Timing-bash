@@ -1,0 +1,1 @@
+python plotRoteResult.py rmResult/
