@@ -1,0 +1,20 @@
+#! /usr/bin/env psrsh
+zap freq 980:1150
+zap freq 1750:1780
+zap chan 393:416
+zap chan 643:646
+zap chan 1464:1471
+
+
+# set the median smoothing boxcar width to 25 channels
+zap median window=32
+
+# set the cutoff to 2.8 times the residual standard deviation
+#zap median cutoff=2.8
+zap median cutoff=4.5
+
+zap median exp={$all:max-$all:min}
+
+# apply the median smoothing filter
+zap median 
+
