@@ -1,0 +1,6 @@
+#! /usr/bin/env psrsh
+# Prefix a command with "init" so that it is run only once.
+# This is useful when processing multiple files and 
+# there is a real-time performance requirement.
+# edit the header
+edit rcvr:name=19BEAM

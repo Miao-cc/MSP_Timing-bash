@@ -1,0 +1,14 @@
+#! /usr/bin/env psrsh
+# Prefix a command with "init" so that it is run only once.
+# This is useful when processing multiple files and 
+# there is a real-time performance requirement.
+# zap frequence 
+zap freq 1000:1030
+zap freq 1470:1500
+
+# sum in time
+tscrunch 1
+
+# edit the header
+edit rcvr:name=19BEAM
+edit type=PolnCal
