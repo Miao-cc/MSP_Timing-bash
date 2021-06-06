@@ -1,5 +1,16 @@
 # MSP_Timing-bash
 Timing bash for MSP Timing
+
+## update RA and DEC (for FAST)
+python update_pos.py filenam ra dec
+
+## combine fits and update the combined file header
+combine_fits 
+update
+
+## 
+
+
 ## fold bash script
  - fold-example-2021.sh
  - fold-example-Cal.sh
