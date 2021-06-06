@@ -8,7 +8,7 @@ python update_pos.py filenam ra dec
 combine_fits 
 update
 
-## 
+## some psrsh script
 
 
 ## fold bash script
