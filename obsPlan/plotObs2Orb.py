@@ -61,8 +61,8 @@ if __name__ == '__main__':
 
 
     MJDs = num.loadtxt("MJDList.txt")
-    startMJD = min(MJDs)
-    endMJD = max(MJDs)
+    startMJD = min(MJDs) - 0.1
+    endMJD = max(MJDs) + 0.2
 
     x = parfile.psr_par(parFile)
 
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     
     print("PSR period: %s ms orbit period: %s d  A1: %s  Tepoch: %s" %(Ppsr, Porb/86400.0, Xorb, Torb))
     print("MJD range: %s to %s" %(startMJD, endMJD))
-    newts = num.arange(startMJD-0.1, endMJD+0.2,0.01)
+    newts = num.arange(startMJD, endMJD,0.01)
     time = orbeqn([Ppsr, Porb, Xorb, Torb], newts)
 
     plt.figure(figsize=(8,6))
@@ -99,5 +99,9 @@ if __name__ == '__main__':
     plt.ylabel("Period (ms)")
     plt.xlabel("MJD")
     plt.xlim(startMJD-0.15, endMJD+0.25)
-    plt.savefig("result.eps", format='eps')
+    filename = parFile.split('/')[-1]
+    if filename.endswith('par'):
+        plt.savefig(filename.replace('par','eps'), format='eps')
+    else:
+        plt.savefig("result.eps", format='eps')
     plt.show()
