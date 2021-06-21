@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./print_resid -m  -r  -i -e  > res.dat

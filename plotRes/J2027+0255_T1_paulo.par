@@ -1,0 +1,27 @@
+PSRJ            J2027+0255
+RAJ      20:27:30.86786657  0          0.00014701
+DECJ      02:55:37.9748575  0           0.0134590
+F0     94.3795129304457419  0  0.0000000001740937
+F1     -4.676104418151D-16  0  4.251597977446D-18
+PEPOCH        58781.000000
+START            58794.935
+FINISH           59289.129
+DM               51.117521  0            0.003464
+DMEPOCH        58781.0000
+SOLARN0              10.00
+EPHEM               DE436
+#CLK                 TT(BIPM2019)                    
+CLK                 UNCORR                          
+UNITS               TDB
+TIMEEPH             FB90
+T2CMETHOD           TEMPO
+CORRECT_TROPOSPHERE N
+PLANET_SHAPIRO      N
+DILATEFREQ          N
+NTOA                   566
+TRES                 34.50
+TZRMJD  58794.93598375745475
+TZRFRQ            1454.237
+TZRSITE                  AO
+MODE                     1
+NITS                     2
